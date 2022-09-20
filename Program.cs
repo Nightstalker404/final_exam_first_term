@@ -10,3 +10,14 @@
 }
 
 
+string[] NewArr(string[] arr)
+{
+    string[] new_arr  = new string[arr.Length];
+    for (int i = 0; i < new_arr.Length; i++)
+    {
+        if (arr[i].Length <= 3)
+            new_arr[i] = arr[i];
+    }
+    new_arr = new_arr.Where(x => x != null).ToArray();
+    return new_arr;
+}
