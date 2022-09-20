@@ -22,7 +22,9 @@ string[] NewArr(string[] arr)
     return new_arr;
 }
 
-string[] arr_string = StringArr();
+Console.WriteLine("Введите длину массива: ");
+int num = int.Parse(Console.ReadLine());
+string[] arr_string = StringArr(num);
 Console.WriteLine("Вывод массива");
 string[] new_string = NewArr(arr_string);
 Console.WriteLine($"[{String.Join(",", new_string)}]");
