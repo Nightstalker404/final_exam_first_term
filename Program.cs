@@ -21,3 +21,8 @@ string[] NewArr(string[] arr)
     new_arr = new_arr.Where(x => x != null).ToArray();
     return new_arr;
 }
+
+string[] arr_string = StringArr();
+Console.WriteLine("Вывод массива");
+string[] new_string = NewArr(arr_string);
+Console.WriteLine($"[{String.Join(",", new_string)}]");
